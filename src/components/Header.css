@@ -1,0 +1,15 @@
+.Header {
+  background-color: #f5f0ea;
+}
+
+.textHeader {
+  text-align: right;
+  color: #174642;
+  margin-top: 50%;
+}
+
+.imgHeader {
+  width: 800px;
+  display: flex;
+  align-items: right;
+}
