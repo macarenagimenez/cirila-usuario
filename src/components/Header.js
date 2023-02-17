@@ -7,16 +7,27 @@ export default function Header() {
     <section>
       <div className="Header">
         <Row className="g-0">
-          <Col>
-            <div className="textHeader">
-              <h1>Diseño propio</h1>
-              <h1>Hecho a mano</h1>{" "}
+          <Col xs={4}>
+            <div>
+              <img
+                src="images/logoCirila.png"
+                alt="GaiaCirilaHeader"
+                className="imgHeaderLogo"
+              />
+              <h6>Objetos únicos hechos a mano. </h6>
             </div>
           </Col>
-          <Col>
+          <Col xs={4}>
             <img
-              src="images/imgheader.jpg"
+              src="images/headerimg1.png"
               alt="GaiaCirilaHeader"
+              className="imgHeader"
+            />
+          </Col>
+          <Col xs={4}>
+            <img
+              src="images/headerimg2.png"
+              alt="GaiaCirilaHeader2"
               className="imgHeader"
             />
           </Col>
