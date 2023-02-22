@@ -2,15 +2,8 @@
   font-family: "Katibeh", cursive;
   color: #174642;
   background-color: #ebcfac;
-  /* le dan altura al div con heeight y con line height vas adecuando la ubicacion vertical*/
-  height: 100px;
-  line-height: 90px;
   text-align: center;
-}
-
-span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-  font-size: 40px;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
 }
