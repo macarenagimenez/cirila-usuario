@@ -1,0 +1,8 @@
+.containerA {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+}

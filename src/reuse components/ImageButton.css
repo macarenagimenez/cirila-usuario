@@ -1,3 +1,26 @@
-.handleCategoriaButton {
+.handleImgCategoriaButton {
+  font-family: montserrat;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
   border-radius: 20px;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.handleImgProductButton {
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
 }

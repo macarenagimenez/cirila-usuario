@@ -13,6 +13,13 @@
   display: table;
   margin: 5px auto;
   padding: 0px 30px 6px 30px;
-  border-radius: 20px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+.divideImageA {
+  font-size: 40px;
+  padding: 0px 30px 6px 30px;
+  border-radius: 30px;
   letter-spacing: 1px;
 }
