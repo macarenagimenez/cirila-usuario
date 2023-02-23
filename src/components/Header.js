@@ -15,7 +15,7 @@ export default function Header() {
                 alt="GaiaCirilaHeader"
                 className="imgHeaderLogo"
               />
-              <h6>Objetos únicos hechos a mano. </h6>
+              <h6 className="slogan">Objetos únicos hechos a mano. </h6>
             </div>
           </Col>
           <Col xs={4}>

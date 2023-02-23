@@ -1,0 +1,16 @@
+.buttonText {
+  background-color: #f4cfc7;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #ffff;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+}
+
+.categorias {
+  font-size: 20px;
+  display: table;
+  margin: 35px auto;
+  padding: 0.3% 10%;
+}

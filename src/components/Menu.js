@@ -3,21 +3,14 @@ import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import MenuButton from "../reuse components/MenuButton";
+import "./Menu.css";
 
 export default function Menu() {
   return (
     <>
       <Navbar expand="lg" className="NavBar">
         <Container>
-          <Navbar.Brand>
-            <img
-              src="images/logo.png"
-              width="100%"
-              height="50"
-              className="d-inline-block align-top"
-              alt="GaiaCirila Logo"
-            />{" "}
-          </Navbar.Brand>
+          <Navbar.Brand className="writeBrand">Gaia Cirila</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="ms-auto">
