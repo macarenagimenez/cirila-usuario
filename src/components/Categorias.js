@@ -6,7 +6,7 @@ import "./Categorias.css";
 
 export default function Categorias() {
   return (
-    <>
+    <section>
       {" "}
       <ButtonText text="VER TODAS LAS CATEGORIAS" />
       <div className="imagesCategory">
@@ -37,6 +37,6 @@ export default function Categorias() {
           </Col>
         </Row>{" "}
       </div>
-    </>
+    </section>
   );
 }

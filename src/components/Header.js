@@ -20,7 +20,7 @@ export default function Header() {
           </Col>
           <Col xs={4}>
             <img
-              src="images/headerimg1.png"
+              src="images/headerGIF.gif"
               alt="GaiaCirilaHeader"
               className="imgHeader"
             />
