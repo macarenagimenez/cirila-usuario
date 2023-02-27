@@ -9,7 +9,7 @@ export default function Separador(props) {
   return (
     <div style={{ backgroundImage: imgBackground }} className={props.class}>
       {" "}
-      <BubbleText text="SOMOS EL MEJOR REGALO" styleCss="divideImageA" />
+      <BubbleText text={props.text} styleCss="divideImageA" />
     </div>
   );
 }

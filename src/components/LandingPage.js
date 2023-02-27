@@ -6,6 +6,7 @@ import Categorias from "./Categorias";
 import Separador from "./Separador";
 import ButtonText from "../reuse components/ButtonText";
 import Productos from "./Productos";
+import SeparadorB from "./SeparadorB";
 
 export default function LandingPage() {
   return (
@@ -17,9 +18,14 @@ export default function LandingPage() {
         styleCss="classIntro"
       />
       <Categorias />
-      <Separador image="images/divideA.jpg" class="containerA" />
+      <Separador
+        image="images/divideA.jpg"
+        text="SOMOS EL MEJOR REGALO"
+        class="containerA"
+      />
       <ButtonText text="VER TODOS LOS PRODUCTOS" />
       <Productos />
+      <SeparadorB />
     </>
   );
 }
