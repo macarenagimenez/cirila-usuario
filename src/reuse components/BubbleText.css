@@ -1,0 +1,25 @@
+.bubbleText {
+  font-family: "Katibeh", cursive;
+  color: #174642;
+  background-color: #ebcfac;
+  text-align: center;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.28);
+}
+
+.classIntro {
+  font-size: 40px;
+  display: table;
+  margin: 5px auto;
+  padding: 0px 30px 6px 30px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+.divideImageA {
+  font-size: 40px;
+  padding: 0px 30px 6px 30px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
