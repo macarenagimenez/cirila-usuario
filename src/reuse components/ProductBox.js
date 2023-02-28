@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+
 import "./ProductBox.css";
 
 import ImageButton from "./ImageButton";

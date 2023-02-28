@@ -7,7 +7,7 @@ export default function SeparadorB() {
     <div className="containerDivideB">
       <Row className="g-0">
         <Col className="colIlustration">
-          <img src="images/ilustracion.jpg" />
+          <img src="images/ilustracion.jpg" alt="ilustracion" />
         </Col>
         <Col className="containerTextIlustration">
           <p className="textIlustration">
