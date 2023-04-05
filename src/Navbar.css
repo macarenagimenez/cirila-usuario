@@ -1,9 +1,32 @@
-.NavBar {
-  background-color: #ffffff;
+.Navbar {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  display: block;
 }
 
 .writeBrand {
   font-family: "Katibeh", cursive;
   color: #174642 !important;
   font-size: 32px !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: right;
+}
+.NameNavbar {
+  text-decoration-line: none;
+  color: #f4cfc7;
+  display: block;
+  padding: 8px;
+  background-color: white;
+}
+.NameNavbar:hover {
+  color: #f4cfc7 !important;
 }
