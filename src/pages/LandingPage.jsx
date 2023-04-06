@@ -23,7 +23,12 @@ export default function LandingPage() {
       />
       <ButtonText text="VER TODOS LOS PRODUCTOS" />
       <Productos />
-      <SeparadorB />
+
+      <Separador
+        image="images/pexels-ksenia-chernaya-3965540.jpg"
+        text="HECHO A MANO"
+        class="containerA"
+      />
     </>
   );
 }
