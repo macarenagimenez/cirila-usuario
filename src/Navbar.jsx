@@ -7,6 +7,11 @@ function Navbar() {
     <div className="Navbar">
       <nav>
         <ul>
+          <li style={{ float: "left" }}>
+            <Link to="/" className="writeBrand">
+              Gaia Cirila
+            </Link>
+          </li>
           <li>
             <Link to="/" className="NameNavbar">
               Home
