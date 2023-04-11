@@ -1,0 +1,41 @@
+.footer {
+  background-color: #f4cfc7;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.imagesFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.iconsAndText {
+  margin: 5%;
+}
+
+.iconsAndText p {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 50%;
+  padding-bottom: 50px;
+}
+
+.contact hr {
+  border-top: 5px solid white;
+  opacity: 1;
+}
+.authors {
+  margin-top: 50px;
+}
+.authors a {
+  text-decoration: none;
+}
+.authors a:visited {
+  color: white;
+}

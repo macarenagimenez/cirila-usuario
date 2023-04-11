@@ -13,7 +13,6 @@ export default function Productos() {
     fetch(apiURL)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         let productosDestacados = data.map(
           (productoDestacado) =>
             new ProductoDestacado(
