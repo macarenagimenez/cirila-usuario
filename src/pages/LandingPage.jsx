@@ -5,7 +5,6 @@ import Categorias from "../components/Categorias";
 import Separador from "../components/Separador";
 import ButtonText from "../reuse components/ButtonText";
 import Productos from "../components/Productos";
-import SeparadorB from "../components/SeparadorB";
 
 export default function LandingPage() {
   return (

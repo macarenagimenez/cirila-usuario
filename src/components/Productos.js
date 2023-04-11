@@ -1,53 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ProductBox from "../reuse components/ProductBox";
 import { Col, Row } from "react-bootstrap";
 import ProductoDestacado from "../Modelo/ProductoDestacado";
 
 export default function Productos() {
-  const productosDestacados = [
-    new ProductoDestacado("Mantelito", "1111.11", "images/cat1.png"),
-    new ProductoDestacado("Mantelito 2", "1111.11", "images/cat2.jpg"),
-    new ProductoDestacado("Mantelito 2", "1111.11", "images/cat2.jpg"),
-    new ProductoDestacado("Mantelito 2", "1111.11", "images/cat2.jpg"),
-    new ProductoDestacado("Mantelito 2", "1111.11", "images/cat2.jpg"),
-  ];
+  const [products, setProducts] = useState([]);
 
-  const maxColumns = 5;
+  const apiURL =
+    "https://cykekm8glh.execute-api.us-east-1.amazonaws.com/prod/v1.0/public/products/featured";
+
+  useEffect(() => {
+    fetch(apiURL)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        let productosDestacados = data.map(
+          (productoDestacado) =>
+            new ProductoDestacado(
+              productoDestacado.title,
+              productoDestacado.price,
+              productoDestacado.imageUrl
+            )
+        );
+        setProducts(productosDestacados);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const renderProductosDestacados = (productos) => {
+    const maxColumns = 5;
     let content = [];
-    for (
-      let i = 0 /* donde se para al iniciar*/;
-      i <
-      productos.length /*se debe validar esta condicion y entra al otro for*/;
-      i += maxColumns /*cuando completo la vuelta ingresa por acá*/
-    ) {
-      //i= i + maxColumn. Primer for para crear las columnas
+    for (let i = 0; i < productos.length; i += maxColumns) {
       let columns = [];
-      for (
-        let j = i /*indice es donde se posiciona en el array*/;
-        j < i + maxColumns &&
-        j < productos.length /*condicion a complirse para crear la fila*/;
-        j++
-      ) {
-        //este for es para crear los productos
+      for (let j = i; j < i + maxColumns && j < productos.length; j++) {
         columns.push(
-          /*meto todo dentro de la variable*/
           <Col>
             <ProductBox
-              name={
-                productos[j].Nombre
-              } /*entro a la clase del constructor creada*/
+              name={productos[j].Nombre}
               price={productos[j].precio}
               image={productos[j].urlImagen}
             />
           </Col>
         );
       }
-      content.push(<Row className="g-0">{columns}</Row>); //con .push metes dentro de la variable lo creado
+      content.push(<Row className="g-0">{columns}</Row>);
     }
     return content;
   };
-
-  return <section>{renderProductosDestacados(productosDestacados)}</section>; //imprimo la constante renderProductos//
+  return <section>{renderProductosDestacados(products)}</section>;
 }
