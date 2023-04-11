@@ -12,7 +12,7 @@ export default function CategoriaButton(props) {
       className={props.class}
     >
       <h2>
-        {props.name} <h5>{props.description}</h5>
+        {props.name} <p className="textDecoration">{props.description}</p>
       </h2>
     </div>
   );

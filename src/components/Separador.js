@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+
 import BubbleText from "../reuse components/BubbleText";
 import "./Separador.css";
 

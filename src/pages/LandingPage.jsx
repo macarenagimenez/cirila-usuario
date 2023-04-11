@@ -1,17 +1,14 @@
 import React from "react";
-import Menu from "./Menu";
-import Header from "./Header";
+import Header from "../components/Header";
 import BubbleText from "../reuse components/BubbleText";
-import Categorias from "./Categorias";
-import Separador from "./Separador";
+import Categorias from "../components/Categorias";
+import Separador from "../components/Separador";
 import ButtonText from "../reuse components/ButtonText";
-import Productos from "./Productos";
-import SeparadorB from "./SeparadorB";
+import Productos from "../components/Productos";
 
 export default function LandingPage() {
   return (
     <>
-      <Menu />
       <Header />
       <BubbleText
         text="Peli, mantita favorita y comida rica... el mejor plan."
@@ -25,7 +22,12 @@ export default function LandingPage() {
       />
       <ButtonText text="VER TODOS LOS PRODUCTOS" />
       <Productos />
-      <SeparadorB />
+
+      <Separador
+        image="images/pexels-ksenia-chernaya-3965540.jpg"
+        text="HECHO A MANO"
+        class="containerA"
+      />
     </>
   );
 }

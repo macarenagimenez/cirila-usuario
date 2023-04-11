@@ -1,0 +1,38 @@
+.Navbar {
+  background-color: white;
+  display: block;
+  height: 50px;
+  margin-top: -16px;
+  position: sticky;
+  top: 0;
+}
+
+.writeBrand {
+  font-family: "Katibeh", cursive;
+  color: #174642;
+  font-size: 32px;
+  text-decoration-line: none;
+}
+.writeBrand:hover {
+  color: #f4cfc7 !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: right;
+  margin-right: 30px;
+}
+.NameNavbar {
+  text-decoration-line: none;
+  color: #f4cfc7;
+  display: block;
+  padding: 8px;
+  margin-top: 7px;
+}
+.NameNavbar:hover {
+  color: #f4cfc7 !important;
+}
