@@ -36,7 +36,7 @@ export default function Productos() {
       let columns = [];
       for (let j = i; j < i + maxColumns && j < productos.length; j++) {
         columns.push(
-          <Col>
+          <Col key={j + i}>
             <ProductBox
               name={productos[j].Nombre}
               price={productos[j].precio}
@@ -45,7 +45,11 @@ export default function Productos() {
           </Col>
         );
       }
-      content.push(<Row className="g-0">{columns}</Row>);
+      content.push(
+        <Row key={i} className="g-0">
+          {columns}
+        </Row>
+      );
     }
     return content;
   };
