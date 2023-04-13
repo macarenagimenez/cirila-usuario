@@ -16,6 +16,7 @@ export default function Productos() {
         let productosDestacados = data.map(
           (productoDestacado) =>
             new ProductoDestacado(
+              productoDestacado.id,
               productoDestacado.title,
               productoDestacado.price,
               productoDestacado.imageUrl
@@ -37,6 +38,7 @@ export default function Productos() {
         columns.push(
           <Col key={j + i}>
             <ProductBox
+              id={productos[j].id}
               name={productos[j].Nombre}
               price={productos[j].precio}
               image={productos[j].urlImagen}
