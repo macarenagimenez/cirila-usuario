@@ -7,7 +7,7 @@ export default function Productos() {
   const [products, setProducts] = useState([]);
 
   const apiURL =
-    "https://cykekm8glh.execute-api.us-east-1.amazonaws.com/prod/v1.0/public/products/featured";
+    "https://w9aofwvf14.execute-api.us-east-1.amazonaws.com/prod/v1.0/products/prominent";
 
   useEffect(() => {
     fetch(apiURL)
@@ -16,6 +16,7 @@ export default function Productos() {
         let productosDestacados = data.map(
           (productoDestacado) =>
             new ProductoDestacado(
+              productoDestacado.id,
               productoDestacado.title,
               productoDestacado.price,
               productoDestacado.imageUrl
@@ -37,6 +38,7 @@ export default function Productos() {
         columns.push(
           <Col key={j + i}>
             <ProductBox
+              id={productos[j].id}
               name={productos[j].Nombre}
               price={productos[j].precio}
               image={productos[j].urlImagen}
