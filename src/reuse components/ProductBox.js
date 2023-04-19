@@ -3,8 +3,10 @@ import "./ProductBox.css";
 import { Link } from "react-router-dom";
 
 import ImageButton from "./ImageButton";
+
 export default function ProductBox(props) {
   const productUrl = "/product?id=" + props.id;
+
   return (
     <div>
       <div className="productComplete">

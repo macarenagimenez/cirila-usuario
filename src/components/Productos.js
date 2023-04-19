@@ -7,7 +7,7 @@ export default function Productos() {
   const [products, setProducts] = useState([]);
 
   const apiURL =
-    "https://cykekm8glh.execute-api.us-east-1.amazonaws.com/prod/v1.0/public/products/featured";
+    "https://w9aofwvf14.execute-api.us-east-1.amazonaws.com/prod/v1.0/products/prominent";
 
   useEffect(() => {
     fetch(apiURL)
