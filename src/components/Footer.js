@@ -37,7 +37,7 @@ export default function Footer() {
         <br></br>{" "}
       </div>
       <small className="authors">
-        Desing and created by{" "}
+        Design and created by{" "}
         <a
           href="https://www.linkedin.com/in/maria-macarena-gimenez/"
           target="_blank"
