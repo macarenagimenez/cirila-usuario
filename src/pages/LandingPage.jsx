@@ -14,18 +14,19 @@ export default function LandingPage() {
         text="Peli, mantita favorita y comida rica... el mejor plan."
         styleCss="classIntro"
       />
-      <Categorias />
-      <Separador
-        image="images/divideA.jpg"
-        text="SOMOS EL MEJOR REGALO"
-        class="containerA"
-      />
+      {/* <Categorias /> */}
+
       <ButtonText text="VER TODOS LOS PRODUCTOS" />
       <Productos />
 
-      <Separador
+      {/* <Separador
         image="images/pexels-ksenia-chernaya-3965540.jpg"
         text="HECHO A MANO"
+        class="containerA"
+      /> */}
+      <Separador
+        image="images/divideA.jpg"
+        text="SOMOS EL MEJOR REGALO"
         class="containerA"
       />
     </>
