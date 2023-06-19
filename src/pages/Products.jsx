@@ -1,15 +1,15 @@
 import React from "react";
-import Separador from "../components/Separador";
-import ButtonText from "../reuse components/ButtonText";
+import IdentidadDeMarca from "../components/Separador";
+import BotonDeTexto from "../reuse components/ButtonText";
 import Productos from "../components/Productos";
-import ClassifyProducts from "../reuse components/ClassifyProducts";
+import OrdenDeProductos from "../reuse components/ClassifyProducts";
 
 function Products() {
   return (
     <div>
-      <Separador image="images/showroom.jpg" class="containerA" />
-      <ButtonText text="PRODUCTOS" />
-      <ClassifyProducts />
+      <IdentidadDeMarca image="images/showroom.jpg" class="containerA" />
+      <BotonDeTexto text="PRODUCTOS" />
+      <OrdenDeProductos />
       <Productos />
     </div>
   );
